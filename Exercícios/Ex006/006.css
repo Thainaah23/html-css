@@ -1,0 +1,22 @@
+h1{
+    text-align: center;
+    margin: auto;
+    background-color: rgb(195, 195, 250);
+    border-radius: 15px;
+    width: 400px;
+    font-size: 28pt;
+}
+h2{
+    font: bold 15pt 'verdana';
+}
+
+h3{
+    font: normal 14pt 'verdana';
+
+}
+h4{
+    font: bold 13pt 'verdana';
+}
+p{
+    font: normal 12pt 'verdana';
+}

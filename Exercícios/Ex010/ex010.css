@@ -1,0 +1,24 @@
+body{
+    text-align: center;
+    font-size: 15pt;
+}
+h1{
+    background-color: lime;
+    height: 100px;
+    text-align: end;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px;
+}
+div#res{
+    background-color: whitesmoke;
+    padding: 15px;
+    width: 400px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 15px;
+    box-shadow: 5px 2px 5px;
+}
+input{
+    margin-top: 15px;
+    padding: 15px;
+}

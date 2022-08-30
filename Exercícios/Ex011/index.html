@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML:5</title>
+    <link rel="shortcut icon" href="th22.ico" type="image/x-icon">
+    <style>
+        body{
+            margin: auto;
+            text-align: center;
+            background-image: url(aaaa.jpeg);
+            color: white;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: larger;
+        }
+        section{
+            margin: auto;
+            background-color: whitesmoke;   
+            padding: auto;
+            box-shadow: 5px 5px 10px gray;
+            border-radius: 10px;
+            color: black;
+        }
+        img{
+            border-style: dotted;
+            border-width: 7px;
+            border-radius: 100px;
+        }
+    </style>
+</head>
+<body>
+        <h1>Imagem dinâmica</h1>
+    <section>
+        <p>Tente abrir esse site em vários dispositivos diferentes ou simplismente aumente ou diminua o tamanho do seu navegador</p>
+        <picture>
+            <source media="(max-width:750px)" srcset="Imagens/imgP.png" type="image/png">
+            <source media="(max-width:1050px )" srcset="Imagens/ImgM.png" type="image/png">
+            <img src="Imagens/imgG.png" alt="Imagem flexível">
+        </picture>
+    </section>
+    <br>
+    <hr>
+
+    <h1>Reproduzindo audios</h1>
+    <p>Vamos aprender a reproduzir audios em html5</p>
+
+    <section>
+        <div>
+            <audio src="midia/audio.mp3" controls ></audio>
+            <audio preload= “metadata” controls>
+                <source src="midia/happy-mistake.mp3" type="audio/mp3">
+                <p>Infelizmente, seu navegador não carrega audio</p>
+                <a href="midia/audio.mp3" download="audio.mp3">Clique aqui para baixar o arquivo em mp3</a>
+            </audio>
+        </div>
+
+    </section>
+
+</body>
+</html>
