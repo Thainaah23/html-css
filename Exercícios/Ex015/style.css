@@ -29,11 +29,10 @@ h2, h3{
 }
 section *{
     margin-top: 15px;
-    font-family: "Fredoka One", sans-serif;
     border-width: 5px;    
 }
 p{
-    color: whiteb;
+    color: white;
     text-align: justify;
 }
 main{
@@ -45,4 +44,7 @@ main{
     border-radius: 8px;
     border-style: dashed;
 
+}
+body{
+    font-family: "Fredoka One", sans-serif;
 }
