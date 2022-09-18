@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0; /*Tirar espacinho do navegador/ reset css*/
+    box-sizing: border-box;
+}
+body{
+    background-image: url(assets/Fundo.jpg);
+    background-position: top center; /* Centralizar + cima */
+    background-size: 100% auto; /*Adaptação/responsividade da imagem + altura automática*/
+    background-repeat:no-repeat ; /*Não repetir imagem do fundo*/
+    background-color: #121214;
+}
+
+body *{
+    line-height: 160%;
+}
+
+header{
+    padding-top: 32px;
+    height: 132px;
+}
+
+header img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+header div{
+    width: 120px;
+    margin: auto;
+    background-image: linear-gradient(90deg, hsl(255, 96%, 72%) 0%, #43E7AD 50.52%, #E2D45C 100%);
+    border-radius: 50%;
+    display: flex;
+    padding: 4px;
+    transition: transform .3s; /*Propriedade da transição*/
+}
+
+header div:hover{
+    transform: scale(1.1); /* Aumentar ao passar o mouse*/
+
+}
+
+main{
+    max-width: 580px;
+    width: 90%;
+    margin: 32px auto;
+    display: grid;
+
+}
+
+
+ul{
+    list-style: none;
+}
+
+section{
+    color: white;
+    background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+    margin-top: 24px;
+    padding-top: 4px;
+    border-radius: 10px;
+
+}
+
+section div{
+    background-color: #2a2634;   
+    padding: 32px;
+    padding-top: 24px;
+    border-radius: 8px;
+}
+
+section h2{
+    letter-spacing: -0.47px;
+    font-family: 'Inter', sans-serif;
+
+}
+
+section p {
+    letter-spacing: -0.18px;
+    font-family: sans-serif;
+    color: #A1A1AA;
+    
+}
+
+section ul{
+    display: flex; /*Um ao lado do outro / o "block" bloqueia uma linha inteira, ficando uma embaixo da outra*/
+    gap: 16px;
+    margin-top: 24px;
+    flex-wrap: wrap;
+}
+section ul li{
+    transition: transform .3s;
+}
+section ul li:hover{
+    transform: scale(1.1);
+}
+
+.game-list img {
+    border-radius: 8px;
+    width: 90px;
+}
+
+.channel-list img{
+    border-radius: 50%;
+    width: 70px;
+    border: 1px solid #443e54;
+}
+
+
+
+
+/*Animation*/
+
+header div{
+    animation: fromTop .5s 2s backwards; /*Nome da animação + delay*/
+}
+
+main section{
+    animation: fromBottom .7s backwards; 
+}
+
+main section:nth-child(1){
+    animation-delay: 0;
+}
+
+main section:nth-child(2){
+    animation-delay: .3s;
+}
+
+main section:nth-child(3){
+    animation-delay: .6s;
+}
+
+@keyframes fromTop{
+    from {
+        opacity: 0;
+        transform: translateY(-30px)
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fromBottom {
+    from {
+        opacity: 0;
+        transform: translateX(-30px)
+    }
+
+    to{
+        opacity: 1;
+        transform: translateX(0)
+    }
+} 
