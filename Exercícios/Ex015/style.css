@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+.gradient{
+    text-align: center;
+    background-image: linear-gradient(-90deg, red,orange,yellow,green,blue,purple);
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+    color: black
+    ;
+}
+
+header{
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.1;
+    background-color: rgb(230, 230, 230);
+    border-style: dashed;
+    border-width: 5px;
+}
+
+h2, h3{
+    text-align: center;
+}
+section *{
+    margin-top: 15px;
+    font-family: "Fredoka One", sans-serif;
+    border-width: 5px;    
+}
+p{
+    color: whiteb;
+    text-align: justify;
+}
+main{
+    max-width: 700px;
+    width: 90%;
+    margin: 32px auto;
+    display: grid;
+    background-image: linear-gradient(-90deg, red,orange,yellow,green,blue,purple);
+    border-radius: 8px;
+    border-style: dashed;
+
+}
