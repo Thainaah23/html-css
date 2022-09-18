@@ -7,12 +7,10 @@
 .gradient{
     text-align: center;
     background-image: linear-gradient(-90deg, red,orange,yellow,green,blue,purple);
-    background-clip: text;
-    -webkit-background-clip: text;
+    background-clip: text;  /*Demarcar o texto que vai ser coloridão*/
+    -webkit-background-clip: text; /*Demarcar o texto que vai se pintado*/
+    -webkit-text-fill-color: transparent; /*Deixa a cor padrão transparente*/
 
-    -webkit-text-fill-color: transparent;
-    color: black
-    ;
 }
 
 header{
@@ -47,4 +45,22 @@ main{
 }
 body{
     font-family: "Fredoka One", sans-serif;
+}
+
+header{
+    animation:fromTop 7s;
+}
+
+
+
+@keyframes fromTop{
+    from {
+        opacity: 0;
+        transform: translateY(-30px)
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
